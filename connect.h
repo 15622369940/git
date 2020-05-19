@@ -25,4 +25,8 @@ int server_feature_v2(const char *c, const char **v);
 int server_supports_feature(const char *c, const char *feature,
 			    int die_on_error);
 
+void check_stateless_delimiter(int stateless_rpc,
+			       struct packet_reader *reader,
+			       const char *error);
+
 #endif
